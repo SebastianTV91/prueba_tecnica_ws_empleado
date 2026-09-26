@@ -17,7 +17,6 @@ compañía y su **edad actual**, ambos expresados en años, meses y días.
 - [Tecnologías](#tecnologías)
 - [Requisitos previos](#requisitos-previos)
 - [Configuración de la base de datos](#configuración-de-la-base-de-datos)
-- [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
 - [Endpoint REST](#endpoint-rest)
 - [Servicio SOAP](#servicio-soap)
 - [Cómo probar con SoapUI](#cómo-probar-con-soapui)
@@ -53,17 +52,6 @@ spring:
 ```
 
 Ajusta usuario y contraseña según tu instalación local de MySQL.
-
-## Cómo ejecutar el proyecto
-
-```bash
-git clone https://github.com/<tu-usuario>/<tu-repositorio>.git
-cd <tu-repositorio>
-mvn clean install
-mvn spring-boot:run
-```
-
-La aplicación queda escuchando en `http://localhost:8080`.
 
 ## Endpoint REST
 
