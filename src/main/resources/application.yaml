@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: empleadosws
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/bd_empresa?useSSL=false&serverTimezone=America/Bogota&createDatabaseIfNotExist=true
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+    show-sql: true
+    open-in-view: false
+
+soap:
+  service:
+    uri: http://localhost:8080/ws
+
+logging:
+  level:
+    org.springframework.ws: INFO
+    com.parameta.pruebatecnica: DEBUG
