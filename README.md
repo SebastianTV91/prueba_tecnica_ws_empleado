@@ -111,20 +111,19 @@ curl "http://localhost:8080/api/empleados?nombres=Juan&apellidos=Perez&tipoDocum
    reemplaza la plantilla con un XML como el siguiente:
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                   xmlns:tns="http://parameta.com/empleado">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:emp="http://parameta.com/empleado">
    <soapenv:Header/>
    <soapenv:Body>
-      <tns:registrarEmpleadoRequest>
-         <tns:nombres>Juan</tns:nombres>
-         <tns:apellidos>Perez</tns:apellidos>
-         <tns:tipoDocumento>CC</tns:tipoDocumento>
-         <tns:numeroDocumento>123456789</tns:numeroDocumento>
-         <tns:fechaNacimiento>1990-05-15</tns:fechaNacimiento>
-         <tns:fechaVinculacion>2020-03-01</tns:fechaVinculacion>
-         <tns:cargo>Desarrollador</tns:cargo>
-         <tns:salario>4500000</tns:salario>
-      </tns:registrarEmpleadoRequest>
+      <emp:registrarEmpleadoRequest>
+         <emp:nombres>María Alejandra</emp:nombres>
+         <emp:apellidos>Rodríguez Silva</emp:apellidos>
+         <emp:tipoDocumento>DNI</emp:tipoDocumento>
+         <emp:numeroDocumento>1023456790</emp:numeroDocumento>
+         <emp:fechaNacimiento>1988-11-22</emp:fechaNacimiento>
+         <emp:fechaVinculacion>2026-03-15</emp:fechaVinculacion>
+         <emp:cargo>Gerente de Proyectos</emp:cargo>
+         <emp:salario>4500000</emp:salario>
+      </emp:registrarEmpleadoRequest>
    </soapenv:Body>
 </soapenv:Envelope>
 ```
