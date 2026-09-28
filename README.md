@@ -129,9 +129,4 @@ curl "http://localhost:8080/api/empleados?nombres=Juan&apellidos=Perez&tipoDocum
 ```
 
 4. Envía la petición y revisa la respuesta XML, y opcionalmente confirma en
-   MySQL con `SELECT * FROM parameta_db.empleados;`.
-
-> El endpoint SOAP no repite las validaciones de negocio del REST (mayoría
-> de edad, campos vacíos, etc.) — esas viven exclusivamente en
-> `EmpleadoService`. El SOAP solo valida lo que el XSD exige (tipos y
-> presencia de elementos) más la restricción de documento duplicado.
+   MySQL con `SELECT * FROM bd_empresa.empleados;`.
